@@ -1,0 +1,55 @@
+.header {
+  padding: 10px 0;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      padding-right: 12px;
+    }
+
+    p {
+      color: $red;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      color: $blue;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      gap: 20px
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 60px;
+      color: $blue;
+
+      &:hover {
+        color: $red;
+        transition: $transition;
+      }
+    }
+  }
+
+  &__button-call {
+    padding: 12px 14px;
+  }
+
+}

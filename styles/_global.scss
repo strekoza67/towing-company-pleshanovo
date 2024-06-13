@@ -1,0 +1,120 @@
+@import './variables';
+
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  line-height: 25px;
+  color: $black;
+  background-color: $white;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  cursor: pointer;
+  transition: $transition;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: $base-font;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: $base-font;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: $base-font;
+}
+
+h5 {
+  font-size: 17px;
+  font-family: $base-font;
+}
+
+p {
+  font-size: 16px;
+  font-family: $base-font;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media(max-width: 1280px) {
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media(max-width: 1280px) {
+    width: 90%;
+  }
+
+  @media(max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.button {
+  font-family: $base-font;
+  color: $white;
+  background-color: $red;
+  border-radius: 4px;
+  padding: 12px 14px;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.title {
+  letter-spacing: 2.7px;
+  line-height: 1;
+  color: $blue;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: $red;
+}
+
+.text {
+  line-height: 28px;
+  color: $black;
+  margin-bottom: 18px;
+}

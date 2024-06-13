@@ -1,0 +1,46 @@
+.first {
+  position: relative;
+  background-image: url(../../images/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 695px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  &__subtitle,
+  &__title,
+  &__text {
+    color: $white;
+  }
+
+  &__text {
+    width: 460px;
+  }
+
+  &__button {
+    margin-right: 20px;
+  }
+
+}

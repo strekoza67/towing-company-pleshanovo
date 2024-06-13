@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+   Убираем внутренние отступы слева тегам списков,
+   у которых есть атрибут class
+  */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+   Убираем внешние отступы body и двум другим тегам,
+   у которых есть атрибут class
+  */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+   Убираем внешние отступы вертикали нужным тегам,
+   у которых есть атрибут class
+  */
+:where(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+:where(fieldset[class]) {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+   Убираем стандартный маркер маркированному списку,
+   у которого есть атрибут class
+  */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+   Обнуляем вертикальные внешние отступы параграфа,
+   объявляем локальную переменную для внешнего отступа вниз,
+   чтобы избежать взаимодействие с более сложным селектором
+  */
+p {
+  --paragraphMarginBottom: 24px;
+  margin-block: 0;
+}
+
+/**
+   Внешний отступ вниз для параграфа без атрибута class,
+   который расположен не последним среди своих соседних элементов
+  */
+p:where(:not([class]):not(:last-child)) {
+  margin-bottom: var(--paragraphMarginBottom);
+}
+
+/**
+   Упрощаем работу с изображениями
+  */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+   Наследуем свойства шрифт для полей ввода
+  */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+  height: 100%;
+  /**
+     Плавный скролл
+    */
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+     Пригодится в большинстве ситуаций
+     (когда, например, нужно будет "прижать" футер к низу сайта)
+    */
+  min-height: 100%;
+  /**
+     Унифицированный интерлиньяж
+    */
+  line-height: 1.5;
+}
+
+/**
+   Приводим к единому цвету svg-элементы
+  */
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+/**
+   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+  */
+svg * {
+  transition-property: fill, stroke;
+}
+
+/**
+   Удаляем все анимации и переходы для людей,
+   которые предпочитают их не использовать
+  */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  color: #0e1927;
+  background-color: #ffffff;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 1280px) {
+  .content-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .content-wrapper {
+    width: 100%;
+  }
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #bd141e;
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.button:hover {
+  background-color: #0D3F82;
+  color: #ffffff;
+}
+
+.title {
+  letter-spacing: 2.7px;
+  line-height: 1;
+  color: #0D3F82;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #bd141e;
+}
+
+.text {
+  line-height: 28px;
+  color: #0e1927;
+  margin-bottom: 18px;
+}
+
+.header {
+  padding: 10px 0;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  padding-right: 12px;
+}
+.header__logo p {
+  color: #bd141e;
+  text-align: center;
+}
+.header__logo span {
+  text-align: center;
+  color: #0D3F82;
+  text-transform: uppercase;
+  display: block;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-list {
+  display: flex;
+  gap: 20px;
+}
+.header__menu-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  color: #0D3F82;
+}
+.header__menu-link:hover {
+  color: #bd141e;
+  transition: 0.3s ease-in-out;
+}
+.header__button-call {
+  padding: 12px 14px;
+}
+
+.first {
+  position: relative;
+  background-image: url(../../images/main-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 695px;
+}
+.first__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.first * {
+  position: relative;
+  z-index: 2;
+}
+.first__subtitle, .first__title, .first__text {
+  color: #ffffff;
+}
+.first__text {
+  width: 460px;
+}
+.first__button {
+  margin-right: 20px;
+}/*# sourceMappingURL=style.css.map */
