@@ -1,0 +1,98 @@
+.services {
+  margin-top: 140px;
+
+  &__descr {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__items {
+    &-top {
+      display: flex;
+      height: 350px;
+      align-items: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    &-bottom {
+      display: flex;
+      gap: 20px;
+      height: 350px;
+      margin-top: 25px;
+    }
+  }
+
+  &__top-item--vehicle {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 55px 35px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: #ebeaea;
+    }
+
+    &__title {
+      font-weight: 600;
+    }
+  }
+
+  &__top-item--sale {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 55px 35px;
+    background-color: #FFB92B;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: #e9ae38;
+    }
+
+    &__shape {
+      position: absolute;
+      color: #FFB92B;
+      background-color: #000000;
+      padding: 8px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-size: 13px;
+      top: 15px;
+      right: 15px;
+    }
+
+    &__title {
+      font-weight: 600;
+    }
+  }
+
+  &__bottom-item {
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 55px 35px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: #ebeaea;
+    }
+
+    &__title {
+      font-weight: 600;
+    }
+  }
+
+
+}

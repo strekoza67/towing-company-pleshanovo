@@ -83,7 +83,6 @@ p:where(:not([class]):not(:last-child)) {
    Упрощаем работу с изображениями
   */
 img {
-  display: block;
   max-width: 100%;
 }
 

@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   height: 695px;
+  margin-top: 0;
 
   &__inner {
     display: flex;
@@ -28,7 +29,6 @@
     z-index: 2;
   }
 
-
   &__subtitle,
   &__title,
   &__text {
@@ -41,6 +41,11 @@
 
   &__button {
     margin-right: 20px;
+    padding: 8px 14px;
+
+    &-call {
+      padding: 8px 14px;
+    }
   }
 
 }
