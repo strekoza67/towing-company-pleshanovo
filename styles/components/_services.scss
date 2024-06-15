@@ -33,6 +33,7 @@
     background-color: #F5F5F5;
     cursor: pointer;
     transition: $transition;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
 
     &:hover {
       background-color: #ebeaea;
@@ -53,6 +54,7 @@
     background-color: #FFB92B;
     cursor: pointer;
     transition: $transition;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
 
     &:hover {
       background-color: #e9ae38;
@@ -84,6 +86,7 @@
     background-color: #F5F5F5;
     cursor: pointer;
     transition: $transition;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
 
     &:hover {
       background-color: #ebeaea;

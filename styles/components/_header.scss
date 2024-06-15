@@ -1,5 +1,16 @@
 .header {
-  padding: 10px 0;
+  padding: 6px 0;
+  top: -100px;
+  transition: .7s ease;
+
+  &__fixed {
+    width: 100%;
+    position: fixed;
+    transform: translateY(100px);
+    background-color: #fff;
+    z-index: 50;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
 
   &__logo {
     display: flex;
@@ -38,18 +49,20 @@
       position: relative;
       display: inline-flex;
       align-items: center;
-      height: 60px;
+      height: 50px;
       color: $blue;
 
       &:hover {
         color: $red;
         transition: $transition;
+        transform: scale(1.1);
+        text-shadow: 4px -2px 1px rgba(34, 60, 80, 0.2);
       }
     }
   }
 
   &__button-call {
-    padding: 12px 14px;
+    padding: 8px 10px;
   }
 
 }

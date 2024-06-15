@@ -1,0 +1,63 @@
+.footer {
+  padding: 40px 0;
+  background-color: #bedaff;
+  box-shadow: 4px -4px 8px 0px rgba(34, 60, 80, 0.2);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    img {
+      padding-right: 12px;
+    }
+
+    p {
+      color: $red;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      color: $blue;
+      text-transform: uppercase;
+      display: block;
+    }
+  }
+
+  &__contacts-link {
+    margin-right: 20px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__menu {
+    display: flex;
+
+    &-list {
+      display: flex;
+      gap: 300px
+    }
+
+    &-link {
+      position: relative;
+      color: $blue;
+      padding: 6px;
+
+      &:hover {
+        color: $red;
+        transition: $transition;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+}
