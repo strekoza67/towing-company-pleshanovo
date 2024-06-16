@@ -14,3 +14,30 @@ document.onscroll = function () {
     document.body.removeAttribute('style');
   }
 }
+
+// gallery PopUps
+
+let imgPopup = document.createElement('div'),
+  bigImg = document.createElement('img'),
+  workSection = document.querySelector('.gallery');
+
+imgPopup.classList.add('imgPopup');
+workSection.appendChild(imgPopup);
+
+imgPopup.style.cssText = 'justify-content: center; display: none; align-items: center;';
+imgPopup.appendChild(bigImg);
+
+workSection.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if (e.target && e.target.matches('.gallery__img')) {
+    imgPopup.style.display = 'flex';
+    const path = e.target.getAttribute('src');
+    console.log(path);
+    bigImg.setAttribute('src', path);
+  }
+
+  if (e.target && e.target.matches('.imgPopup')) {
+    imgPopup.style.display = 'none';
+  }
+})

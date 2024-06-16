@@ -1,12 +1,13 @@
 .header {
   padding: 6px 0;
-  top: -100px;
-  transition: .7s ease;
+  // top: -80px;
+  transition: all .7s ease-in-out;
 
   &__fixed {
     width: 100%;
     position: fixed;
-    transform: translateY(100px);
+    top: -80px;
+    transform: translateY(80px);
     background-color: #fff;
     z-index: 50;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
