@@ -426,7 +426,7 @@ section {
 
 .first {
   position: relative;
-  background-image: url(../../images/main-bg.jpg);
+  background-image: url(../images/main-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -596,7 +596,7 @@ section {
 
 .discount {
   position: relative;
-  background-image: url(../../images/discount-bg.jpg);
+  background-image: url(../images/discount-bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -830,7 +830,7 @@ section {
 
 .gallery {
   position: relative;
-  background-image: url(../../images/gallery-bg.jpg);
+  background-image: url(../images/gallery-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
