@@ -978,7 +978,7 @@ section {
 .contacts__email::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/email.svg);
+  background-image: url(../images/email.svg);
   width: 25px;
   height: 25px;
   left: 3px;
@@ -986,7 +986,7 @@ section {
 .contacts__whatsapp::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/whatsapp.svg);
+  background-image: url(../images/whatsapp.svg);
   width: 25px;
   height: 25px;
   left: 3px;
@@ -994,7 +994,7 @@ section {
 .contacts__telegram::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/telegram.svg);
+  background-image: url(../images/telegram.svg);
   width: 30px;
   height: 30px;
   left: 0;
@@ -1003,7 +1003,7 @@ section {
 .contacts__vk::before {
   position: absolute;
   content: "";
-  background-image: url(../../images/vk.svg);
+  background-image: url(../images/vk.svg);
   width: 30px;
   height: 30px;
   left: 0;
