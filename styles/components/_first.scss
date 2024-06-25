@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
-  height: 695px;
+  height: 470px;
   margin-top: 0;
 
   &__inner {
@@ -27,6 +27,10 @@
   * {
     position: relative;
     z-index: 2;
+  }
+
+  &__content {
+    max-width: 1000px;
   }
 
   &__subtitle,
