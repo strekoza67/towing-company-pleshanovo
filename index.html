@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, user-scalabel=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animate.css">
   <title>Эвакуатор Плешаново</title>
 </head>
 
@@ -21,7 +22,7 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a href="#first" class="header__menu-link">Главная</a>
+            <a href="#" class="header__menu-link">Главная</a>
           </li>
           <li class="header__menu-item">
             <a href="#about" class="header__menu-link">О нас</a>
@@ -62,9 +63,9 @@
 
   <main class="content">
 
-    <section id="first" class="first">
+    <section id="first" class="first wow fadeIn">
       <div class="first__inner content-wrapper">
-        <div class="first__content">
+        <div class="first__content wow fadeIn">
           <h5 class="first__subtitle subtitle">Необходимая помощь на дорогах</h5>
           <h2 class="first__title title">Обеспечиваем надежную эвакуацию автомобилей</h2>
           <p class="first__text text">Оказываем надежные услуги по эвакуации автом по всему Красногвардейскому району.
@@ -82,23 +83,22 @@
     <section id="about" class="about">
       <div class="about__inner container">
         <div class="about__content">
-          <div class="about__left">
+          <div class="about__left wow fadeInLeft">
             <div class="about__image">
               <div class="about__left-aside__boxes">
-                <div class="about__left-first__box">
+                <div class="about__left-first__box wow fadeInDown" data-wow-delay="0.5s">
                   <img width="52" height="52" src="images/truck.svg" alt="">
                   <div class="box-text">24/7 Услуги эвакуатора</div>
                 </div>
-                <div class="about__left-second__box">
+                <div class="about__left-second__box wow fadeInUp" data-wow-delay="0.5s">
                   <img width="60" height="60" src="images/arms.svg" alt="">
                   <div class="box-text">24/7 Поддержка </div>
                 </div>
               </div>
               <img src="images/about.jpg" alt="" class="about-img">
             </div>
-
           </div>
-          <div class="about__descr">
+          <div class="about__descr wow fadeInRight">
             <h5 class="about__subtitle subtitle"> О нас</h5>
             <h3 class="about__title title"> Небольшая забота о ваш неприятностях</h3>
             <p class="about__text text">Мы - хорошо оборудованная служба эвакуации, готовая помочь с буксировкой
@@ -114,7 +114,7 @@
     <section class="advantages">
       <div class="advantages__inner container">
         <div class="advantages__content">
-          <div class="advantages__descr">
+          <div class="advantages__descr wow fadeInUp">
             <h5 class="about__subtitle subtitle"> Почему именно мы</h5>
             <h3 class="about__title title"> Служба экстренной эвакуации</h3>
             <p class="about__text text">Самостоятельно буксировать автомобиль может быть сложно, если у вас нет
@@ -124,15 +124,15 @@
             <a href="#price" class="advantages__button button">Узнать подробнее</a>
           </div>
 
-          <div class="advantages__right">
+          <div class="advantages__right wow fadeInDown">
             <div class="advantages__image">
               <div class="advantages__right-aside__boxes">
-                <div class="advantages__right-first__box">
-                  <img width="60" height="56" src="images/car.svg" alt="">
+                <div class="advantages__right-first__box wow fadeInLeft" data-wow-delay="0.5s">
+                  <img width=" 60" height="56" src="images/car.svg" alt="">
                   <div class="box-text">Отбуксируем любое авто</div>
                 </div>
-                <div class="advantages__right-second__box">
-                  <img width="46" height="56" src="images/thumb.svg" alt="">
+                <div class="advantages__right-second__box wow fadeInRight" data-wow-delay="0.5s">
+                  <img width=" 46" height="56" src="images/thumb.svg" alt="">
                   <div class="box-text">Быстро, безопасно и доступно </div>
                 </div>
               </div>
@@ -144,9 +144,9 @@
     </section>
 
 
-    <section id="services" class="discount">
+    <section id="services" class="discount wow fadeIn">
       <div class="discount__inner container">
-        <div class="discount__content">
+        <div class="discount__content wow fadeInLeft">
           <div class="discount__content-wrapper">
             <h2 class="discount__title title">
               Скидка 25% на первый заказ
@@ -159,20 +159,20 @@
         </div>
         <div class="discount__boxes-wrapper">
           <div class="discount__boxes">
-            <div class="discount__box">
-              <h2 class="discount__box-subtitle subtitle">2000+</h2>
+            <div class="discount__box wow fadeInUp" data-wow-delay="0.6s">
+              <h2 class=" discount__box-subtitle subtitle">2000+</h2>
               <div class="discount__box-title title">Довольных клиентов</div>
             </div>
-            <div class="discount__box">
+            <div class="discount__box wow fadeInUp" data-wow-delay="0.2s">
               <h2 class="discount__box-subtitle subtitle">98%</h2>
               <div class="discount__box-title title">Успеха среди клиентов</div>
             </div>
-            <div class="discount__box">
+            <div class="discount__box wow fadeInUp" data-wow-delay="0.4s">
               <h2 class="discount__box-subtitle subtitle">10000+</h2>
               <div class="discount__box-title title">Километров</div>
             </div>
-            <div class="discount__box">
-              <h2 class="discount__box-subtitle subtitle">10+</h2>
+            <div class="discount__box wow fadeInUp" data-wow-delay="0.8s"">
+              <h2 class=" discount__box-subtitle subtitle">10+</h2>
               <div class="discount__box-title title">Лет опыта</div>
             </div>
           </div>
@@ -182,7 +182,7 @@
 
     <section class="services">
       <div class="services__inner container">
-        <div class="services__descr">
+        <div class="services__descr wow fadeInUp">
           <p class="services__subtitle subtitle">Наши услуги</p>
           <h3 class="services__title title">Мы перевезём ваш автомобиль безопасно и эффективно</h3>
           <p class="services__text text">Мы - хорошо оборудованная служба эвакуации, готовая помочь с буксировкой
@@ -192,7 +192,7 @@
 
         <div class="services__items">
           <div class="services__items-top">
-            <div class="services__top-item--vehicle">
+            <div class="services__top-item--vehicle wow fadeInLeft">
               <div class="services__top-item--vehicle__image"><img width="70" height="70" src="images/truck.svg" alt="">
               </div>
               <h4 class="services__top-item--vehicle__title title">Служба экстренной эвакуации</h4>
@@ -202,7 +202,7 @@
                 буксировке автомобилей.</p>
             </div>
 
-            <div class="services__top-item--sale">
+            <div class="services__top-item--sale wow fadeInDown">
               <div class="services__top-item--sale__shape">Ограниченное предложение</div>
               <div class="services__top-item--sale__image"><img width="70" height="70" src="images/sale.svg" alt="">
               </div>
@@ -213,20 +213,20 @@
 
           </div>
           <div class="services__items-bottom">
-            <div class="services__bottom-item">
+            <div class="services__bottom-item wow fadeInLeft">
               <div class="services__bottom-item__image"><img width="70" height="70" src="images/car.svg" alt="car">
               </div>
               <h4 class="services__bottom-item__title title">Служба эвакуации автомобилей</h4>
               <p class="services__bottom-item__text">Мы эксплуатируем новые, чистые и профессиональные буксировочные
                 машины и оборудование.</p>
             </div>
-            <div class="services__bottom-item">
+            <div class="services__bottom-item wow fadeInUp">
               <div class="services__bottom-item__image"><img width="70" height="70" src="images/motorcycle.svg"
                   alt="car"></div>
               <h4 class="services__bottom-item__title title">Буксировка мотоциклов</h4>
               <p class="services__bottom-item__text">Мы не только машины но и двухколесный транспорт.</p>
             </div>
-            <div class="services__bottom-item">
+            <div class="services__bottom-item wow fadeInRight">
               <div class="services__bottom-item__image"><img width="70" height="70" src="images/road.svg" alt="car">
               </div>
               <h4 class="services__bottom-item__title title">Буксировка на большие расстояния</h4>
@@ -239,7 +239,7 @@
 
     <section id="price" class="price">
       <div class="price__inner container">
-        <div class="price__descr">
+        <div class="price__descr wow fadeInUp">
           <h5 class="price__subtitle subtitle">Лучшее предложения района</h5>
           <h3 class="price__title title">Стоимость услуг</h3>
           <p class="price__text text">Наши цены на услуги самые приемлемые для всего Красногвардейского района. Никого
@@ -247,14 +247,14 @@
         </div>
 
         <table class="price__table">
-          <thead>
-            <tr>
+          <thead class="wow fadeInUp">
+            <tr class="wow fadeInUp">
               <th>Тип транспортного средства</th>
               <th>Стоимость</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td class="table-row">
                 <p class="table__title title">Эвакуатор мототехники</p>
               </td>
@@ -262,7 +262,7 @@
                 <p class="table__price text">от 2000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Легковые автомобили до 1,5 тонн</p>
               </td>
@@ -270,7 +270,7 @@
                 <p class="table__price text">от 2000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Эвакуатор легковых машин от 2 тонн (седан, купе, фаэтон, родстер,
                   универсал, хэтчбек, лифтбек)</p>
@@ -279,7 +279,7 @@
                 <p class="table__price text">от 2000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Перевозка раритетных (ретро) автомобилей</p>
               </td>
@@ -287,7 +287,7 @@
                 <p class="table__price text">от 2500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Перевозка эксклюзивных (элитных) автомобилей</p>
               </td>
@@ -295,7 +295,7 @@
                 <p class="table__price text">от 2500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Эвакуатор для минивэнов</p>
               </td>
@@ -303,7 +303,7 @@
                 <p class="table__price text">от 2500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Эвакуатор для внедорожников и джипов</p>
               </td>
@@ -311,7 +311,7 @@
                 <p class="table__price text">от 2500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Эвакуатор для ГАЗели</p>
               </td>
@@ -319,7 +319,7 @@
                 <p class="table__price text">от 2700 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Эвакуатор для микроавтобуса</p>
               </td>
@@ -327,7 +327,7 @@
                 <p class="table__price text">от 2700 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Эвакуатор для автобуса</p>
               </td>
@@ -335,7 +335,7 @@
                 <p class="table__price text">от 6000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Транспортировка для спорткаров (спортивных а/м)</p>
               </td>
@@ -343,7 +343,7 @@
                 <p class="table__price text">от 2700 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Эвакуация легких и грузовых авто (до 5 тонн)</p>
               </td>
@@ -353,12 +353,12 @@
             </tr>
           </tbody>
           <thead>
-            <tr>
+            <tr class="wow fadeInUp">
               <th colspan="2" class="table__additionally">Дополнительно</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Экстренная эвакуация 24 часа</p>
               </td>
@@ -366,7 +366,7 @@
                 <p class="table__price text">10%</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Изменение маршрута</p>
               </td>
@@ -374,7 +374,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Простой эвакуатора по вине клиента</p>
               </td>
@@ -382,7 +382,7 @@
                 <p class="table__price text">500 руб. за 30 минут</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Ложный вызов или переадресация</p>
               </td>
@@ -390,7 +390,7 @@
                 <p class="table__price text">50% от заказа</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Подача эвакуатора для транспортировки авто</p>
               </td>
@@ -400,13 +400,13 @@
             </tr>
           </tbody>
           <thead>
-            <tr>
+            <tr class="wow fadeInUp">
               <th>Сложность эвакуации</th>
               <th>Стоимость</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Вывернуты колеса</p>
               </td>
@@ -414,7 +414,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Блокировка руля</p>
               </td>
@@ -422,7 +422,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Блокировка Коробки передач</p>
               </td>
@@ -430,7 +430,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Большое количество поломок</p>
               </td>
@@ -438,7 +438,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Отсутствует штатная буксировочная серьга (крюк)</p>
               </td>
@@ -446,7 +446,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Вытаскивание из ряда</p>
               </td>
@@ -454,7 +454,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Эвакуация ТС с газона, тротуара</p>
               </td>
@@ -462,7 +462,7 @@
                 <p class="table__price text">+500 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">Поднять перевернутую машину с крыши</p>
               </td>
@@ -472,13 +472,13 @@
             </tr>
           </tbody>
           <thead>
-            <tr>
+            <tr class="wow fadeInUp">
               <th>Тип эвакуации</th>
               <th>Стоимость</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">Закрытого типа</p>
               </td>
@@ -486,7 +486,7 @@
                 <p class="table__price text">от 2000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInRight">
               <td>
                 <p class="table__title title">С частичной погрузкой</p>
               </td>
@@ -494,7 +494,7 @@
                 <p class="table__price text">от 2000 руб.</p>
               </td>
             </tr>
-            <tr>
+            <tr class="wow fadeInLeft">
               <td>
                 <p class="table__title title">На 2 машины</p>
               </td>
@@ -510,7 +510,7 @@
 
     <section id="rewives" class="rewives">
       <div class="rewives__inner container">
-        <div class="rewives__content">
+        <div class="rewives__content wow fadeInUp">
           <div class="rewives__descr">
             <p class="rewives__subtitle subtitle">Отзывы</p>
             <h3 class="rewives__title title">Что говорят о нас</h3>
@@ -518,7 +518,7 @@
           </div>
 
           <div class="rewives__items">
-            <div class="rewives__item">
+            <div class="rewives__item  wow fadeInUp" data-wow-delay="0.4s">
               <div class="rewives__item-text text">Когда я позвонил в службу помощи на дороге, приехал Майк из Towa. Он
                 был чрезвычайно мил и забрал мою машину, как свою собственную, когда погрузил ее на эвакуатор. ”
               </div>
@@ -532,7 +532,7 @@
               </div>
             </div>
 
-            <div class="rewives__item">
+            <div class="rewives__item wow fadeInUp" data-wow-delay="0.2s">
               <div class="rewives__item-text text">Когда я позвонил в службу помощи на дороге, приехал Майк из Towa. Он
                 был чрезвычайно мил и забрал мою машину, как свою собственную, когда погрузил ее на эвакуатор. ”
               </div>
@@ -546,7 +546,7 @@
               </div>
             </div>
 
-            <div class="rewives__item">
+            <div class="rewives__item wow fadeInUp" data-wow-delay="0.6s">
               <div class="rewives__item-text text">Когда я позвонил в службу помощи на дороге, приехал Майк из Towa. Он
                 был чрезвычайно мил и забрал мою машину, как свою собственную, когда погрузил ее на эвакуатор. ”
               </div>
@@ -565,18 +565,18 @@
     </section>
 
     <section id="gallery" class="gallery">
-      <div class="gallery__inner container">
+      <div class="gallery__inner container wow fadeInLeft">
         <h2 class="gallery__title title">Галерея</h2>
         <p class="gallery__text text">Вы можете визуально ознакомиться с видом и результатами нашей работы</p>
         <div class="gallery__content">
-          <div class="one"><img class="gallery__img" src="images/gallery-photo-1.jpg" alt=""></div>
-          <div class="two"><img class="gallery__img" src="images/gallery-photo-2.jpg" alt=""></div>
-          <div class="three"><img class="gallery__img" src="images/gallery-photo-3.jpg" alt=""></div>
-          <div class="four"><img class="gallery__img" src="images/gallery-photo-4.jpg" alt=""></div>
-          <div class="five"><img class="gallery__img" src="images/gallery-photo-5.jpg" alt=""></div>
-          <div class="six"><img class="gallery__img" src="images/gallery-photo-6.jpg" alt=""></div>
-          <div class="seven"><img class="gallery__img" src="images/gallery-photo-7.jpg" alt=""></div>
-          <div class="eight"><img class="gallery__img" src="images/gallery-photo-8.jpg" alt=""></div>
+          <div class="one wow fadeInLeft"><img class="gallery__img" src="images/gallery-photo-1.jpg" alt=""></div>
+          <div class="two wow fadeInRight"><img class="gallery__img" src="images/gallery-photo-2.jpg" alt=""></div>
+          <div class="three wow fadeInDown"><img class="gallery__img" src="images/gallery-photo-3.jpg" alt=""></div>
+          <div class="four wow fadeInUp"><img class="gallery__img" src="images/gallery-photo-4.jpg" alt=""></div>
+          <div class="five wow fadeInLeft"><img class="gallery__img" src="images/gallery-photo-5.jpg" alt=""></div>
+          <div class="six wow fadeInDown"><img class="gallery__img" src="images/gallery-photo-6.jpg" alt=""></div>
+          <div class="seven wow fadeInLeft"><img class="gallery__img" src="images/gallery-photo-7.jpg" alt=""></div>
+          <div class="eight wow fadeInUp"><img class="gallery__img" src="images/gallery-photo-8.jpg" alt=""></div>
         </div>
       </div>
     </section>
@@ -717,6 +717,8 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script> new WOW().init();</script>
 </body>
 
 </html>
